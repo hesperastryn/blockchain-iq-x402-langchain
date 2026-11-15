@@ -1,0 +1,42 @@
+{
+  "x402Version": 2,
+  "error": "Payment required",
+  "resource": {
+    "url": "https://www.blockchainiq.co/api/x402/v1/brief",
+    "description": "Market brief in one parameter-free call: BTC, ETH, SOL and XRP prices with 24h, 7d and 30d moves and rank, scheduled macro and crypto events in the next 48 hours, and short risk flags. Use as the opening call of a trading, portfolio or research agent loop. Refreshed every minute. JSON, no API key. $0.01 per call. Blockchain IQ.",
+    "mimeType": "application/json",
+    "serviceName": "Crypto Market Brief for Agents",
+    "tags": [
+      "crypto",
+      "market-brief",
+      "event-risk",
+      "macro",
+      "trading"
+    ]
+  },
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "amount": "10000",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0x617dA9383fbA67e86137BC4924b8b7E400fB7C9e",
+      "maxTimeoutSeconds": 300,
+      "extra": {
+        "name": "USD Coin",
+        "version": "2"
+      }
+    },
+    {
+      "scheme": "exact",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+      "amount": "10000",
+      "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "payTo": "473o2o4QaubXvvAFr9jikTCEirA6xhpzMSBxJpbTocLf",
+      "maxTimeoutSeconds": 300,
+      "extra": {
+        "feePayer": "BENrLoUbndxoNMUS5JXApGMtNykLjFXXixMtpDwDR9SP"
+      }
+    }
+  ]
+}
